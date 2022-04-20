@@ -11,7 +11,7 @@ try{
         //Consulta para realizar la insercion de los datos a partir del archivo xml
         $consulta = <<<CONSULTA
                         USE dbs4868809;
-
+                
                         INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES
                             ('albertoF',SHA2('albertoFpaso',256),'AlbertoF'),
                             ('outmane',SHA2('outmanepaso',256),'Outmane'),

@@ -12,7 +12,7 @@ try{
         $consulta = <<<CONSULTA
                         USE dbs4868809;
                 
-                        CREATE TABLE IF NOT EXISTS T01_Usuario(
+                        CREATE TABLE IF NOT EXISTS dbs4868809.T01_Usuario(
                             T01_CodUsuario varchar(20) PRIMARY KEY,
                             T01_Password varchar(64) NOT NULL,
                             T01_DescUsuario varchar(255) NOT NULL,
@@ -22,7 +22,7 @@ try{
                             T01_ImagenUsuario mediumblob NULL
                         )engine=innodb;
 
-                        CREATE TABLE IF NOT EXISTS T02_Departamento(
+                        CREATE TABLE IF NOT EXISTS dbs4868809.T02_Departamento(
                             T02_CodDepartamento varchar(3) PRIMARY KEY,
                             T02_DescDepartamento varchar(255) NOT NULL,
                             T02_FechaCreacionDepartamento INT NOT NULL,
@@ -30,14 +30,14 @@ try{
                             T02_FechaBajaDepartamento int NULL
                         )engine=innodb;
                 
-                        CREATE TABLE IF NOT EXISTS T03_Cuestion(
+                        CREATE TABLE IF NOT EXISTS dbs4868809.T03_Cuestion(
                             T03_CodCuestion varchar(3) PRIMARY KEY,
                             T03_DescCuestion varchar(500) NOT NULL,
                             T03_NumOrden int,
                             T03_TipoRespuesta enum('si','no') DEFAULT 'no'
                         )engine=innodb;
                 
-                        CREATE TABLE IF NOT EXISTS T04_Opinion(
+                        CREATE TABLE IF NOT EXISTS dbs4868809.T04_Opinion(
                             T04_CodUsuario varchar(20),
                             T04_CodCuestion varchar(3),
                             T04_ValorOpinionTipo1 varchar(3) NOT NULL,

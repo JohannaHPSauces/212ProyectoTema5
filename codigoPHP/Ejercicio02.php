@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Ejercicio 02</title>
-        <style>
-            h3{
-                color:darkslateblue;
-            }
-             table{
-                border: solid 2px black;
-            }
-            th{
-                background: blue;
-                color:white;
-            }
-            td{
-                border: solid 1px black;
-                background: bisque;
-            }
-        </style>
-    </head>
-    <body>
-        <?php
+<?php
             /*
              * @author: Johanna Herrero Pozuelo
              * Created on: 20/04/2022
@@ -91,6 +68,29 @@
                 echo '</table>';
 
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 02</title>
+        <style>
+            h3{
+                color:darkslateblue;
+            }
+             table{
+                border: solid 2px black;
+            }
+            th{
+                background: blue;
+                color:white;
+            }
+            td{
+                border: solid 1px black;
+                background: bisque;
+            }
+        </style>
+    </head>
+    <body>
     </body>
 </html>
 
