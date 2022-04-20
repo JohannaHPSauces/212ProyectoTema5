@@ -10,7 +10,7 @@ try{
 
         //Consulta para realizar la insercion de los datos a partir del archivo xml
         $consulta = <<<CONSULTA
-                         USE dbs4868809;
+                        USE dbs4868809;
 
                         INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES
                             ('albertoF',SHA2('albertoFpaso',256),'AlbertoF'),
@@ -51,7 +51,7 @@ try{
         $DB212DWESProyectoTema5->exec($consulta); //Ejecuto la consulta
 
         echo"<p style='background-color:lime;'>CONEXION ESTABLECIDA</p>";
-        echo"<p style='background-color:lime;'>CARGADO EXITOSO</p>";
+        echo"<p style='background-color:lime;'>CARGA EXITOSA</p>";
         
     }catch (PDOException $excepcion) {//Codigo que se ejecuta si hay algun error
         $codigoError=$excepcion->getCode();//Obtenemos y guardamos el codigo del error
